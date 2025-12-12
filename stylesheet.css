@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: white;
+    font-size: 30px;
+}
+
+h1:hover {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    background-color: #b30000;
+    padding: 20px;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.hero-title {
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+header {
+    background-color: #b30000;
+    position: sticky;
+    padding: 10px;
+}
+
+header:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+header a:hover {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+
+.hero-section {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    background-image: url("./images/háttér.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 1200px;
+    height: 60vh;
+    border-radius: 20px;
+    filter: blur(1px);
+
+}
+
+.hero-content p {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 100px auto;
+}
+
+.hero-content h2 {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+img {
+    height: 250px;
+}
+
+
+button {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+button:hover {
+    scale: 1.5;
+}
+
+.card-section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.card:hover {
+    transform: translateY(25px);
+}
+
+#snow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url("./images/snow.png");
+    animation: snowfall 20s linear infinite;
+
+    z-index: 0;
+}
+
+.kapcsolat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+.music-box{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 55px;
+    height: 55px;
+
+}
+
+
+@keyframes snowfall {
+    0% {
+        background-position: 0 -1000px;
+    }
+
+    100% {
+        background-position: 0 1000px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    ul a {
+        margin: 5px;
+    }
+
+}
